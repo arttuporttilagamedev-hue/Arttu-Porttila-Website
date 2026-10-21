@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="pictures/ap_favicon_png2.png">
+        <title>Arttu's Homepage</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <nav class="navbar">
+                <a href="index.html" class="logo">Arttu Porttila</a>
+
+                <div class="nav-menu" id="navLinks">
+                    <ul class="nav-links">
+                        <li><a href="index.html" data-i18n="nav_home">KOTI</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">TIETOA MINUSTA</a></li>
+                        <li><a href="skills.html" data-i18n="nav_skills">OSAAMINEN</a></li>
+                        <li><a href="projects.html" data-i18n="nav_projects">PROJEKTIT</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">OTA YHTEYTTÄ</a></li>
+                    </ul>
+                    
+                    <div class="lang-switch">
+                        <button type="button" data-lang="fi" class="active">FI</button>
+                        <button type="button" data-lang="en">EN</button>
+                    </div>
+                </div>
+
+                <button type="button" class="nav-toggle" id="navToggle" aria-label="Avaa valikko" aria-expanded="false" aria-controls="navLinks">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+            <div class="nav-backdrop" id="navBackdrop"></div>
+        </section>
+
+        <main class="hero">
+            <img class="main-picture" src="pictures/1.jpg" alt="Taustakuva">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">Tervetuloa Sivulleni</h1>
+                <p data-i18n="hero_text">Olen Arttu, ohjelmistokehityksen opiskelija ja tämä sivu kertoo minusta.</p>
+            </div>
+        </main>
+
+        <section class="cards">
+            <article class="card reveal from-left card-left">
+                <h4 class="cards-title" data-i18n="card_about_title">TIETOA MINUSTA</h4>
+                <p class="cards-text" data-i18n="card_about_text">Olen Arttu toisen vuoden ohjelmistokehityksen opiskelija.</p>
+                <a href="about.html" class="card-link" data-i18n="card_about_more">Lue lisää →</a>
+            </article>
+
+            <article class="card reveal from-right card-right">
+                <h4 class="cards-title" data-i18n="card_skills_title">OSAAMINEN</h4>
+                <p class="cards-text" data-i18n="card_skills_text">Osaamista minulta löytyy jo paljon ohjelmointiin ja 3D-mallinnukseen liittyen.</p>
+                <ul class="cards-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                </ul>
+                <a href="skills.html" class="card-link" data-i18n="card_skills_more">Katso osaaminen →</a>
+            </article>
+
+            <article class="card reveal from-left card-left card-wide">
+                <h4 class="cards-title" data-i18n="card_projects_title">PROJEKTIT</h4>
+                <p class="cards-text" data-i18n="card_projects_text">Olen tehnyt muutamia projekteja myös tämän nettisivun lisäksi.</p>
+                <a href="projects.html" class="card-link" data-i18n="card_projects_more">Katso projektit →</a>
+            </article>
+
+            <article class="card reveal from-right card-right">
+                <h4 class="cards-title" data-i18n="card_contact_title">OTA YHTEYTTÄ</h4>
+                <p class="cards-text" data-i18n="card_contact_text">Onko sinulla idea tai kysyttävää? Laita viestiä!</p>
+                <a href="contact.html" class="card-link" data-i18n="card_contact_more">Lähetä viesti →</a>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <p class="footer-text" data-i18n="footer_text">Täältä löydät kaikki sivut ja sosiaalisen median linkit</p>
+
+            <div class="footer-main">
+                <ul class="footer-social">
+                    <li><a href="https://github.com/arttuporttilagamedev-hue" target="_blank" aria-label="GitHub" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="white" aria-hidden="true">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                        </a>
+                    </li>
+                    <li><a href="https://fi.linkedin.com/in/arttu-porttila-319a04383" target="_blank" aria-label="LinkedIn" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="40" height="40" fill="white" aria-hidden="true">
+                            <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="footer-links">
+                    <li><a href="index.html" data-i18n="footer_home">KOTI</a></li>
+                    <li><a href="about.html" data-i18n="footer_about">TIETOA MINUSTA</a></li>
+                    <li><a href="skills.html" data-i18n="footer_skills">OSAAMINEN</a></li>
+                    <li><a href="projects.html" data-i18n="footer_projects">PROJEKTIT</a></li>
+                    <li><a href="contact.html" data-i18n="footer_contact">OTA YHTEYTTÄ</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="lang.js"></script>
+        <script src="nav.js"></script>
+        <script src="main.js"></script>
+        <script>initReveal(".reveal", { threshold: 0.2 });</script>
+    </body>
+</html>
